@@ -1,0 +1,89 @@
+@mixin flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer {
+  background-color: #1d1d1e;
+  padding: 3rem 0;
+
+  .wrapper {
+    max-width: 85vw;
+    margin: 0 auto;
+    @include flex();
+    gap: 5rem;
+
+    .list {
+      @include flex();
+      width: 60%;
+      margin: 0 auto;
+      // justify-content: space-evenly;
+    }
+
+    h3 {
+      color: #fff;
+      margin-bottom: 1.5rem;
+    }
+
+    li {
+      margin-bottom: 0.7rem;
+      color: #f1f3f9;
+      font-size: 0.8rem;
+      font-weight: 400;
+      opacity: 0.85;
+    }
+
+    li:hover {
+      transform: translateX(10px);
+    }
+
+    .logo {
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 6rem;
+
+      .social {
+        @include flex();
+        gap: 1.5rem;
+      }
+    }
+  }
+
+  .copy {
+    max-width: 85vw;
+    margin: 0 auto;
+
+    p {
+      color: #fff;
+      margin-top: 2.5rem;
+    }
+  }
+}
+
+@media (max-width: 865px) {
+  .footer {
+    text-align: center;
+    .wrapper {
+      @include flex();
+      flex-direction: column;
+      justify-content: center;
+      .list {
+        flex-direction: column;
+        justify-content: center;
+
+        ul {
+          margin-bottom: 2rem;
+        }
+      }
+      .logo {
+        .social {
+          margin-left: 3.5rem;
+        }
+      }
+    }
+  }
+}

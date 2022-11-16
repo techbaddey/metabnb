@@ -1,0 +1,45 @@
+.wrapper {
+  max-width: 85rem;
+  margin: 3rem auto;
+
+  h1 {
+    margin: 2rem 0 3rem;
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+  }
+}
+
+.row {
+  max-width: 85vw;
+  margin: 2.5rem auto 0;
+
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    // gap: 1rem;
+    li {
+      padding: 0.6rem;
+    }
+
+    li.location {
+      display: flex;
+      align-items: center;
+      flex-direction: row-reverse;
+      gap: 1rem;
+      // padding: 0.6rem;
+      border-radius: 0.6rem;
+      border: 2px solid #cfd8dc;
+    }
+  }
+}

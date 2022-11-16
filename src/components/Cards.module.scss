@@ -1,0 +1,36 @@
+.card {
+  border: 1px solid #d7d7d7;
+  border-radius: 0.4rem;
+  padding: 1rem;
+  cursor: pointer;
+  transition: all 0.7s ease-in-out;
+
+  .distance_container,
+  .place_container {
+    display: flex;
+    // align-items: center;
+    justify-content: space-between;
+  }
+
+  small {
+    margin-top: 0.4rem;
+    font-size: 0.75rem;
+  }
+
+  .night {
+    font-size: 0.75rem;
+    font-weight: 700;
+  }
+
+  .star {
+    margin-top: 0.5rem;
+    img {
+      margin-right: 0.5rem;
+    }
+  }
+}
+
+.card:hover {
+  // transform: rotateY(360deg);
+  transform: translateY(-10px);
+}

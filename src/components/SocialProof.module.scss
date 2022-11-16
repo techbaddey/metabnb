@@ -1,0 +1,15 @@
+.social_proof {
+  margin-top: 10rem;
+  padding: 1rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #a02279;
+}
+
+@media (max-width: 865px) {
+  .social_proof {
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+}

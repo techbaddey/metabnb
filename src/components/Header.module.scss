@@ -1,0 +1,98 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 85vw;
+  margin: 0 auto;
+  padding: 2rem 0;
+  position: relative;
+
+  .desktop {
+    display: flex;
+    ul {
+      display: flex;
+      align-items: center;
+      gap: 3rem;
+
+      li {
+        transition: all 0.4s ease-in-out;
+      }
+      li:hover {
+        transform: scale(1.05);
+      }
+      li:active {
+        transform: scale(0.95);
+      }
+    }
+  }
+
+  .mobile_btn,
+  .desktop_btn {
+    background: linear-gradient(90deg, #a02279 11.45%, #a02279 11.46%);
+    color: #fff;
+    padding: 1rem;
+    border: none;
+    border-radius: 0.7rem;
+    cursor: pointer;
+    transition: all 0.4s ease-in;
+  }
+
+  .desktop_btn:hover {
+    transform: scale(1.05);
+  }
+
+  .desktop_btn:active {
+    transform: scale(0.95);
+  }
+
+  .desktop_btn {
+    display: flex;
+  }
+}
+
+.mobile {
+  display: none;
+}
+
+@media (max-width: 865px) {
+  .header {
+    .desktop_btn,
+    .desktop {
+      display: none;
+    }
+  }
+
+  .mobile {
+    display: block;
+    text-align: center;
+
+    .icon {
+      width: 2.5rem;
+      height: 2.5rem;
+      z-index: 101;
+      position: relative;
+    }
+
+    .nav_bar {
+      background: linear-gradient(90deg, #a02279 11.45%, #a02279 11.46%);
+      position: fixed;
+      width: 100vw;
+      height: 100vh;
+      left: -0;
+      top: 0;
+      z-index: 1;
+
+      ul {
+        margin-top: 5rem;
+      }
+
+      li {
+        margin-bottom: 2rem;
+      }
+
+      li a {
+        color: #fff;
+      }
+    }
+  }
+}
